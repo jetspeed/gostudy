@@ -8,6 +8,5 @@ func main() {
 	go func() { message <- "ping" }()
 
 	msg := <-message
-
 	fmt.Println(msg)
 }
